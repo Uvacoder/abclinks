@@ -114,7 +114,7 @@ export default function Home() {
           position: "bottom-left",
           isClosable: true,
         })
-      }>Languages & Technologys</Button>
+      }>Languages & Technologies</Button>
 
 </VStack>
 </Center>
