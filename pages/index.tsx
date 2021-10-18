@@ -2,7 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import Container from '../components/Container'
 import { Avatar, VStack, Center, Heading, Button, Text, useToast} from "@chakra-ui/react"
-import { FaGithub, FaEnvelope, FaLinkedin, FaCodepen, FaDiscord, FaCode } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaDev, FaTwitter, FaLinkedin, FaCodepen, FaDribbble, FaCode } from "react-icons/fa";
 
 export default function Home() {
     const toast = useToast()
@@ -25,7 +25,7 @@ export default function Home() {
     <VStack spacing={4}>
     <Avatar size="2xl" name="Alec_Campbell" src="./floppa.png" />
     {" "}
-    <Heading>Alec_Campbell</Heading>
+    <Heading>Alec Campbell</Heading>
     <Text>Fullstack Developer</Text>
 
     <Link href="https://github.com/uvacoder">
@@ -44,9 +44,9 @@ export default function Home() {
     </Link>
 
 
-    <Link href="https://discord.com/users/358778308747460610">
+    <Link href="https://dribbble.com/uvacoder">
     <a target="_blank">
-    <Button width="350px" leftIcon={<FaDiscord />}onClick={() =>
+    <Button width="350px" leftIcon={<FaDribbble />}onClick={() =>
         toast({
           title: "Link Opened",
           description: "Opened the requested link!",
@@ -55,10 +55,40 @@ export default function Home() {
           position: "bottom-left",
           isClosable: true,
         })
-      }>Discord</Button>
+      }>Dribbble</Button>
       </a>
     </Link>
+        
+    <Link href="https://dev.to/fu4303">
+    <a target="_blank">
+    <Button width="350px" leftIcon={<FaDev />}onClick={() =>
+        toast({
+          title: "Link Opened",
+          description: "Opened the requested link!",
+          status: "success",
+          duration: 3000,
+          position: "bottom-left",
+          isClosable: true,
+        })
+      }>Dev.to</Button>
+      </a>
+    </Link>       
 
+    <Link href="https://twitter.com/AlecCam43544378">
+    <a target="_blank">
+    <Button width="350px" leftIcon={<FaTwitter />}onClick={() =>
+        toast({
+          title: "Link Opened",
+          description: "Opened the requested link!",
+          status: "success",
+          duration: 3000,
+          position: "bottom-left",
+          isClosable: true,
+        })
+      }>Twitter</Button>
+      </a>
+    </Link>    
+        
     <Link href="mailto:freeunioncoder@gmail.com">
     <a target="_blank">
     <Button width="350px" leftIcon={<FaEnvelope />}onClick={() =>
