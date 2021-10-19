@@ -9,21 +9,21 @@ export default function Home() {
   return (
     <>
       <Head>
-  <title>Alec_Campbell</title><link rel="icon" href="/triangle.webp" />
+  <title>Alec_Campbell</title><link rel="icon" href="/drawkidglasses.PNG" />
   <meta name="og:type" content="website" />
   <meta charSet="UTF-8" />
   <meta name="description" content="Alec_Campbell website." />
   <meta name="keywords" content="NextJs, ChakraUI" />
   <meta name="author" content="Alec_Campbell" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="og:image" content="/triangle.webp" />
+  <meta name="og:image" content="/drawkidglasses.PNG" />
   <meta name="theme-color" content="#337ab7" />
   <script async src="https://arc.io/widget.min.js#Zn9FDne2"></script>
   </Head>
     <Container />
     <Center>
     <VStack spacing={4}>
-    <Avatar size="2xl" name="Alec_Campbell" src="./triangle.webp" />
+    <Avatar size="2xl" name="Alec_Campbell" src="./drawkidglasses.PNG" />
     {" "}
     <Heading>Alec Campbell</Heading>
     <Text>Fullstack Developer</Text>
