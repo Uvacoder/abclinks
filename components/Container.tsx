@@ -10,7 +10,7 @@ const Container = ({ children }: ContainerProps) => {
 
     const bgColor = {
         light: "white",
-        dark: "#1A202C",
+        dark: "#E5F6FF",
     };
 
     const color = {
