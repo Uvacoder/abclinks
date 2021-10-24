@@ -15,7 +15,7 @@ const Container = ({ children }: ContainerProps) => {
 
     const color = {
         light: "black",
-        dark: "white",
+        dark: "#E5F6FF",
     };
 
     const navHoverBg = {
