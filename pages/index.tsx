@@ -2,7 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import Container from '../components/Container'
 import { Avatar, VStack, Center, Heading, Button, Text, useToast} from "@chakra-ui/react"
-import { FaGithub, FaEnvelope, FaDev, FaTwitter, FaLinkedin, FaCodepen, FaDribbble, FaCode } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaDev, FaTwitter, FaLinkedin, FaCodepen, FaDribbble, FaCode, FaStackOverflow } from "react-icons/fa";
 
 export default function Home() {
     const toast = useToast()
@@ -133,6 +133,21 @@ export default function Home() {
       }>Linkedin</Button>
       </a>
     </Link>
+        
+    <Link href="https://stackoverflow.com/users/17330377/uvacoder">
+    <a target="_blank">
+    <Button width="350px" leftIcon={<FaStackOverflow />}onClick={() =>
+        toast({
+          title: "Link Opened",
+          description: "Opened the requested link!",
+          status: "success",
+          duration: 3000,
+          position: "bottom-left",
+          isClosable: true,
+        })
+      }>StackOverflow</Button>
+      </a>
+    </Link>     
 
     <Button width="350px" leftIcon={<FaCode />}onClick={() =>
         toast({
